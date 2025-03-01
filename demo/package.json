@@ -1,7 +1,6 @@
 {
   "name": "react-email-editor-demo",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --port 3000",
@@ -26,6 +25,6 @@
     "@types/react-dom": "^16.8.4",
     "parcel": "^2.13.3",
     "process": "^0.11.10",
-    "typescript": "^3.4.5"
+    "typescript": "^3.9.10"
   }
 }
