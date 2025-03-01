@@ -3,13 +3,14 @@ import { Routes, Route } from 'react-router-dom';
 
 import DesignList from './DesignList';
 import DesignEdit from './DesignEdit';
+import  baseRelativePath from './BasePath';
 
 const Dashboard = () => {
   return (
     <Routes>
-      <Route path="/" element={<DesignList />} />
-      <Route path={`/design/new`} element={<DesignEdit />} />
-      <Route path={`/design/edit/:designId`} element={<DesignEdit />} />
+      <Route path={`${baseRelativePath}/`} element={<DesignList />} />
+      <Route path={`${baseRelativePath}/design/new`} element={<DesignEdit />} />
+      <Route path={`${baseRelativePath}/design/edit/:designId`} element={<DesignEdit />} />
     </Routes>
   );
 };

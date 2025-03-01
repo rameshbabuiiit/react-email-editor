@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import baseRelativePath from './BasePath';
 
 const DesignList = () => {
   return (
@@ -7,7 +8,7 @@ const DesignList = () => {
       <h1>My Designs</h1>
 
       <p>
-        <Link to={`/dashboard/design/new`}>New Design</Link>
+        <Link to={`${baseRelativePath}/dashboard/design/new`}>New Design</Link>
       </p>
     </div>
   );

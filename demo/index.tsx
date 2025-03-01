@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Example from './src/example';
 import Dashboard from './src/dashboard';
+import  baseRelativePath from './src/dashboard/BasePath';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -25,8 +26,8 @@ const App = () => {
     <Router>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Example />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
+        <Route path={`${baseRelativePath}/`} element={<Example />} />
+        <Route path={`${baseRelativePath}/dashboard/*`} element={<Dashboard />} />
       </Routes>
     </Router>
   );

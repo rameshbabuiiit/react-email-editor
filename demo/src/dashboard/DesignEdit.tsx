@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import  baseRelativePath from './BasePath';
 
 import EmailEditor, { EditorRef } from '../../../src'; // use react-email-editor instead
 
@@ -80,7 +81,7 @@ const DesignEdit = () => {
       <Bar>
         <h1>React Email Editor (Demo)</h1>
 
-        <Link to={`/dashboard`}>Dashboard</Link>
+        <Link to={`${baseRelativePath}/dashboard`}>Dashboard</Link>
         <button onClick={saveDesign}>Save Design</button>
         <button onClick={exportHtml}>Export HTML</button>
       </Bar>

@@ -1,10 +1,13 @@
 {
+  "homepage": "http://rameshbabuiiit.github.io/react-email-editor",
   "name": "react-email-editor-demo",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html --port 3000",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /react-email-editor/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.8.4",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",
     "process": "^0.11.10",
     "typescript": "^3.9.10"
